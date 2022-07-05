@@ -11,10 +11,10 @@ from django.contrib.auth.models import AbstractUser
 # Create your models here.
 
 class Qrcode(models.Model):
-    order_id = models.IntegerField(default=0000)
+    order_id = models.IntegerField()
     name = models.CharField(max_length=15)
-    customer_id = models.IntegerField(default=000)
-    mobile_no = models.IntegerField(default=000)
+    customer_id = models.IntegerField()
+    mobile_no = models.IntegerField()
     code = models.ImageField(upload_to = 'images',blank=True)
 
 
